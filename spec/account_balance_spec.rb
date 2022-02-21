@@ -27,7 +27,7 @@ describe AccountBalance do
   it "statement will include the withdrawal record" do
     account.deposit(1700,date)
     account.withdraw(400,date)
-    expect { account.statement }.to output("date || credit || debit || balance\n03/03/22 ||  || 1700 || 1700\n03/03/22 || 400 ||  || 1300\n").to_stdout
+    expect { account.statement }.to output("date || credit || debit || balance\n03/03/22 || 400 ||  || 1300\n03/03/22 ||  || 1700 || 1700\n").to_stdout
   end
 
 

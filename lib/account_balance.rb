@@ -3,7 +3,7 @@ class AccountBalance
 
   def initialize
     @balance = 0
-    @record = [["date", "credit", "debit", "balance"]]
+    @record = []
   end
 
   def deposit(amount, date)
@@ -17,7 +17,9 @@ class AccountBalance
   end
 
   def statement
-    @record.each do |line|
+    headers = ["date", "credit", "debit", "balance"]
+    puts headers.join(" || ")
+    @record.reverse.each do |line|
       puts line.join(" || ")
     end
 

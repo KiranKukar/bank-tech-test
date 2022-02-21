@@ -22,7 +22,7 @@ describe User do
   it "prints users transaction records" do
     user.deposit(1900,date)
     user.withdraw(600, date)
-    expect { user.statement }.to output("date || credit || debit || balance\n03/03/22 ||  || 1900 || 1900\n03/03/22 || 600 ||  || 1300\n").to_stdout
+    expect { user.statement }.to output("date || credit || debit || balance\n03/03/22 || 600 ||  || 1300\n03/03/22 ||  || 1900 || 1900\n").to_stdout
   end
 
   
