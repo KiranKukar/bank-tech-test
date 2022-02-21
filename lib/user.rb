@@ -1,17 +1,21 @@
+require 'account_balance'
+
 class User
-  attr_reader :balance
 
-  def initialize
-    @balance = 0
-
+  def initialize(account = AccountBalance.new)
+    @account = account
   end
 
   def deposit(amount)
-    @balance += amount
+    @account.deposit(amount)
   end
 
   def withdraw(amount)
-    @balance -= amount
+    @account.withdraw(amount)
+  end
+
+  def balance
+    @account.balance
   end
 
 end
