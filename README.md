@@ -23,6 +23,7 @@ date || credit || debit || balance
 
 # How to run the code
 - clone the repo to your machine
+- run bundle install
 - start irb by running 'irb' in the terminal
 - set up by running these commands in irb:
   * require './lib/user.rb'
