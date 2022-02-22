@@ -1,4 +1,4 @@
-require 'account_balance'
+require './lib/account_balance.rb'
 
 class User
 
@@ -6,12 +6,12 @@ class User
     @account = account
   end
 
-  def deposit(amount, date)
-    @account.deposit(amount, date)
+  def deposit(amount)
+    @account.deposit(amount)
   end
 
-  def withdraw(amount, date)
-    @account.withdraw(amount, date)
+  def withdraw(amount)
+    @account.withdraw(amount)
   end
 
   def balance

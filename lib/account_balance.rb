@@ -1,3 +1,5 @@
+require 'date'
+
 class AccountBalance
   attr_reader :balance
 
@@ -6,14 +8,16 @@ class AccountBalance
     @record = []
   end
 
-  def deposit(amount, date)
-    @balance += amount
-    @record << [date, "", amount, @balance]
+  def withdraw(amount)
+    @balance -= amount
+    date = Date.today
+    @record << ["#{date.day}/#{date.month}/#{date.year}", "", amount, @balance]
   end
 
-  def withdraw(amount, date)
-    @balance -= amount
-    @record << [date, amount, "", @balance]
+  def deposit(amount)
+    @balance += amount
+    date = Date.today
+    @record << ["#{date.day}/#{date.month}/#{date.year}", amount, "", @balance]
   end
 
   def statement
