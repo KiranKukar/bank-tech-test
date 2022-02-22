@@ -11,13 +11,13 @@ class AccountBalance
   def withdraw(amount)
     @balance -= amount
     date = Date.today
-    @record << ["#{date.day}/#{date.month}/#{date.year}", "", amount, @balance]
+    @record << ["#{date.day}/#{date.month}/#{date.year}", "", '%.2f' % amount, '%.2f' % @balance]
   end
 
   def deposit(amount)
     @balance += amount
     date = Date.today
-    @record << ["#{date.day}/#{date.month}/#{date.year}", amount, "", @balance]
+    @record << ["#{date.day}/#{date.month}/#{date.year}", '%.2f' % amount, "", '%.2f' % @balance]
   end
 
   def statement
