@@ -39,4 +39,8 @@ date || credit || debit || balance
  - make sure you have rspec installed
  - and you're in the 'bank-tech-test- directory
  - run 'rspec' in the terminal
+ - 
+![Screenshot 2022-02-22 at 01 25 40](https://user-images.githubusercontent.com/92406004/155046421-f4445c99-d200-4f67-967f-aee309542d99.png)
+
+
 
