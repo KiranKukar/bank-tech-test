@@ -39,7 +39,18 @@ date || credit || debit || balance
  - make sure you have rspec installed
  - and you're in the 'bank-tech-test- directory
  - run 'rspec' in the terminal
- - 
+
+
+# My approach
+- I used a TDD approach
+- First ensuring that the user could deposit and withdraw money.
+- Then creating an AccountBalance class to handle the calculations and keep a record of transactions.
+- After that I refactored my code and updated it with suggestions from the linter.
+
+# How I structured the code and why
+- I used two sepperate classes one for the user to interact with and another to handle calculations and recording transaction information.
+
+# Screenshots of my app running
 ![Screenshot 2022-02-22 at 01 25 40](https://user-images.githubusercontent.com/92406004/155046421-f4445c99-d200-4f67-967f-aee309542d99.png)
 
 
