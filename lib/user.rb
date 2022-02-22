@@ -1,4 +1,4 @@
-require './lib/account_balance.rb'
+require './lib/account_balance'
 
 class User
 

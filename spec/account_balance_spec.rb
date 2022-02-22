@@ -31,5 +31,4 @@ describe AccountBalance do
     expect { account.statement }.to output("date || credit || debit || balance\n#{formatted_date} ||  || 400 || 1300\n#{formatted_date} || 1700 ||  || 1700\n").to_stdout
   end
 
-
 end
